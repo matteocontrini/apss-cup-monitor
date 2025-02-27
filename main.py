@@ -52,7 +52,7 @@ def login():
 def fetch_availabilities(token: str):
     url = 'https://cup.apss.tn.it/mobile/search-resources'
     data = {"startDate": "2025-02-25T23:00:00.000Z", "type": 1, "maxDistance": 180, "searchNear": False,
-            "personFiscalCode": os.environ['PASSWORD'].upper(), "searchSynchro": False, "sameDiary": False,
+            "personFiscalCode": os.environ['USERNAME'].upper(), "searchSynchro": False, "sameDiary": False,
             "weekdays": "1111111",
             "hours": "111111111111", "idExams": [
             {"code": "5000902", "encodingSystem": "APSS_SCHIARA", "flagRepeatable": False, "familyCode": "",
